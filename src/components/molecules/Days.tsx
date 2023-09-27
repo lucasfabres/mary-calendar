@@ -32,7 +32,7 @@ export const Days = ({ displayedWeeks = 6, ...props }: DaysProps) => {
 
   return (
     <div className='grid grid-cols-7 gap-1 w-full h-fit'>
-      {/* Prev rest */}
+      {/* Prev */}
       {Array.from({ length: prevRest }).map((_, index) => {
         // Get end of past month
         const pastMonthEnd = endOfMonth(subMonths(monthStart, 1));
@@ -74,7 +74,7 @@ export const Days = ({ displayedWeeks = 6, ...props }: DaysProps) => {
         );
       })}
 
-      {/* Next rest */}
+      {/* Next */}
       {Array.from({ length: nextRest }).map((_, index) => {
         const day = index + 1;
 

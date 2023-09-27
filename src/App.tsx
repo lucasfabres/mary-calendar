@@ -1,4 +1,4 @@
-import { Preview } from './components/organisms/Preview';
+import { Preview } from '#/organisms/Preview';
 
 function App() {
   return (
